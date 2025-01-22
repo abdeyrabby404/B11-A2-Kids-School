@@ -216,6 +216,103 @@ a {
   text-align: center;
 }
 
+.stories {
+  background: linear-gradient(
+      0deg,
+      rgba(254, 163, 1, 0.3) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    ),
+    url("./assets/bg.png");
+  background-size: 95%;
+}
+.stories h2 {
+  padding: 60px 0 80px 0;
+  color: #000;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.story-cards {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 19px;
+}
+.story-img {
+  height: auto;
+}
+.story-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+.stroy-card {
+  background-color: white;
+  border-radius: 16px;
+}
+.bigger {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.story-description button {
+  /* width: 174px; */
+  height: 47px;
+  padding: 0 18px;
+  border-radius: 47px;
+  position: absolute;
+  top: calc(-52px / 2);
+  border: none;
+
+  color: #fff;
+  font-family: Raleway;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.bigger .story-description {
+  padding: 0 68px 34px 38px;
+  position: relative;
+}
+
+.stroy-card .story-description {
+  padding: 0 54px 33px 37px;
+  position: relative;
+}
+.stroy-card h3 {
+  color: #000;
+  font-family: Quicksand;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  padding-top: 38px;
+}
+.bigger .story-description h3 {
+  padding-top: 50px;
+  margin-bottom: 50px;
+
+  color: #000;
+  font-family: Quicksand;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.bigger .story-description p {
+  color: #666;
+  font-family: Raleway;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 25px;
+}
+.view-all-btn {
+  padding: 80px 0 60px 0;
+  text-align: center;
+}
+
 /* break points */
 @media screen and (max-width: 576px) {
   .curriculum-container,
@@ -254,5 +351,21 @@ a {
   .curriculum h2 {
     font-size: 1.5rem;
     padding: 40px 0 20px 0;
+  }
+  .story-cards {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .bigger {
+    display: none;
+  }
+  .stroy-card button {
+    font-size: 0.5rem;
+  }
+  .stroy-card h3 {
+    font-size: 0.6rem;
+  }
+  .stroy-card .story-description {
+    padding: 0 23px 17px 22px;
   }
 }
