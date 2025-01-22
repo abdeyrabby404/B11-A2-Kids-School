@@ -312,6 +312,88 @@ a {
   padding: 80px 0 60px 0;
   text-align: center;
 }
+.marqu {
+  width: 1160px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: red;
+}
+
+/* footer style */
+/* footer style */
+
+footer {
+  background-color: #01acfd;
+  font-family: Quicksand;
+}
+footer h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 38px;
+}
+footer .container {
+  max-width: 1070px;
+  margin: 0 auto;
+  color: white;
+
+  padding: 120px 0 170px 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+footer ul li {
+  list-style: none;
+}
+footer .info p {
+  max-width: 400px;
+
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 35px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo-section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo-2 {
+  width: 82px;
+}
+.logo-2 img {
+  width: 100%;
+  cursor: pointer;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+.social-links img {
+  width: 100%;
+  border-radius: 4px;
+}
 
 /* break points */
 @media screen and (max-width: 576px) {
@@ -367,5 +449,14 @@ a {
   }
   .stroy-card .story-description {
     padding: 0 23px 17px 22px;
+  }
+  footer .container {
+    padding: 66px 20px 60px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .logo-section {
+    position: relative;
+    left: -5px;
   }
 }
