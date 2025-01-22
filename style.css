@@ -317,6 +317,7 @@ a {
   font-size: 2rem;
   font-weight: 700;
   color: red;
+  text-align: center;
 }
 
 /* footer style */
@@ -458,5 +459,8 @@ footer ul {
   .logo-section {
     position: relative;
     left: -5px;
+  }
+  .marqu{
+    width: 400px;
   }
 }
